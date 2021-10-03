@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <h1>Formulário</h1>
+    </head>
+    <body>
+        <form action="/src/Formulario.html" method="POST">
+            <fieldset>
+                <legend>Dados Gerais</legend>
+
+                <label for="Nome">Nome</label>
+                <input type="text" minlength="3" id="Nome" nome="Nome" required/>
+
+                <label for="DataNascimento"> Data de Nascimento</label>
+                <input type="number" id="DataNascimento" />
+
+                <label for="CPF">CPF:</label>
+                <input type="text" maxlength="11" id="CPF" name="CPF" required/> 
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Endereço</legend>
+                
+                <label for="TipoEndereco">Tipo:</label>
+                <select id="TipoEndereco">
+                    <option value="">Selecione</option>
+                    <option value="Rua">Rua</option>
+                    <option value="Estrada">Estrada</option>
+                    <option value="Rodovia">Rodovia</option>
+                    <option value="Alameda">Alameda</option>
+                    <option value="Outro">Outro</option>
+                </select>
+
+                <label for="LagradouroEndereco">Lagradouro</label>
+                <input type="text" id="LagradouroEndereco"/>
+
+                <label for="NumeroEndereco">N°:</label>
+                <input type="text" id="NumeroEndereco"/>
+
+                <label for="ComplementoEndereco">Complemento</label>
+                <input type="text" id="ComplementoEndereco" />
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Fale Conosco</legend>
+
+                <label for="msg">Mensagem</label>
+                <textarea maxlength="200" id="msg" type="radio"></textarea>
+                <label for="Sugestao">Sugestão</label>
+                <input type="radio"/>
+                <label for="Critica">Critica</label>
+                <input type="radio"/>
+
+            </fieldset>
+
+            <fieldset>
+                <button type="submit">Enviar sua Mensagem</button>
+                <button type="reset">Limpar o Formulário</button>
+            </fieldset>
+        
+        </form>
+
+    </body>
+</html>
